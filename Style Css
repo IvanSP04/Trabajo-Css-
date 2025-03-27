@@ -1,0 +1,118 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif; /* Define la fuente del texto */
+    margin: 0; /* Elimina el margen predeterminado del navegador */
+    padding: 0; /* Elimina el relleno predeterminado */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+}
+
+/* Estilos para el encabezado de la página */
+header {
+    background-color: #9106ee; /* Fondo oscuro para el encabezado */
+    color: white; /* Color del texto en blanco */
+    text-align: center; /* Centra el texto dentro del encabezado */
+    padding: 20px; /* Agrega espacio dentro del encabezado */
+}
+
+/* Estilos para el menú de navegación */
+nav {
+    background-color: #000000; /* Fondo oscuro para el menú */
+    padding: 10px; /* Espaciado interno para el menú */
+}
+
+nav ul {
+    list-style: none; /* Elimina los estilos de lista predeterminados */
+    padding: 0; /* Elimina el relleno */
+    text-align: center; /* Centra los elementos de la lista */
+    background-color: #444; /* Color de fondo del menú */
+    margin: 0; /* Elimina el margen externo */
+}
+
+nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin: 0 15px; /* Agrega un margen horizontal entre los elementos */
+}
+
+nav ul li a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: white; /* Color del texto en blanco */
+    font-size: 18px; /* Tamaño de la fuente */
+    padding: 10px; /* Agrega espacio alrededor del texto */
+    display: inline-block; /* Permite el espaciado y el padding */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Cambia el fondo al pasar el cursor */
+    border-radius: 5px; /* Redondea los bordes */
+}
+
+/* Estilos para las secciones de contenido */
+section {
+    padding: 20px; /* Agrega espaciado interno */
+    max-width: 800px; /* Limita el ancho de la sección */
+    margin: auto; /* Centra la sección en la página */
+    background-color: white; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Agrega sombra al contenedor */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Estilos para las imágenes dentro de las secciones */
+section img {
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 10px auto; /* Centra la imagen horizontalmente con margen */
+    transition: transform 0.3s; /* Agrega una transición suave al hacer hover */
+}
+
+section img:hover {
+    transform: scale(1.1); /* Hace que la imagen aumente su tamaño al pasar el cursor */
+}
+
+/* Estilos para la tabla */
+table {
+    width: 100%; /* Hace que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Elimina los espacios entre bordes */
+    margin-top: 20px; /* Agrega espacio superior a la tabla */
+    background-color: #f9f9f9; /* Color de fondo de la tabla */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Agrega bordes a las celdas */
+    padding: 10px; /* Agrega espaciado interno a las celdas */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+th {
+    background-color: #007bff; /* Fondo azul para los encabezados de la tabla */
+    color: white; /* Texto en color blanco */
+    text-transform: uppercase; /* Convierte el texto en mayúsculas */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+td img {
+    width: 80px; /* Define un ancho fijo para las imágenes dentro de la tabla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Asegura que la imagen sea un bloque */
+    margin: auto; /* Centra la imagen dentro de la celda */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    table {
+        font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+
+    td, th {
+        padding: 8px; /* Reduce el relleno en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Cambia los elementos del menú a bloques para dispositivos pequeños */
+        margin: 10px 0; /* Agrega espacio entre elementos del menú */
+    }
+}
